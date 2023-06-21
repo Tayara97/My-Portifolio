@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+ul {
+  list-style-type: none;
+
+
+
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #4756df;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 1px 2px 15px 2px
+}
+
+#more-about {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  width: 70%;
+  margin: auto;
+  padding: 10% 10% 5% 10%;
+
+
+}
+
+.skill-img {
+  padding-bottom: 2%;
+  gap: 10px;
+}
+
+.icon-card {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px var(--secondary-color);
+  padding: 20px;
+  margin: 10px;
+}
+
+#h2-project {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+
+}
+
+.projects {
+  padding: 32px 0;
+  margin-top: 2rem;
+
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+
+.image-card {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+
+  border-radius: 11px;
+}
+
+.form-container {
+  display: flex;
+
+  padding: 2%;
+  box-shadow: 0px 3px 10px var(--primary-shadow);
+  width: 50%;
+  margin: auto;
+  border: 1px solid #4756df;
+  justify-content: stretch;
+
+}
+
+.input {
+  border: 2px solid #4756df;
+  margin: 10%;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 5px;
+
+
+}
+
+#h2-form {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.form {
+  width: 100%;
+  padding: 5px;
+
+}
+
+
+.label {
+  color: #4756df;
+  font-weight: bold;
+}
+
+.submit-btn {
+  border-radius: 5px;
+
+  font-weight: bold;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #4756df;
+  padding: 1%;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #4756df
+}
+
+.form-container textarea {
+  min-height: 50px;
+  font-size: 14px;
+  width: 100%;
+}
+
+
+/* social style */
+.Social {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*the arrow button*/
+.div-arrow {
+  position: fixed;
+
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+/*changes reflects on screen with a width of 720px and below*/
+@media screen and (max-width: 720px) {
+
+  nav {
+    padding: 18px 4px;
+
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 70px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    nav ul li {
+      margin: 8px;
+    }
+  }
+
+  .burger-menu {
+    display: block;
+
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-top: -4rem
+  }
+
+  .hero img {
+    height: 27.5rem;
+    width: 25.5rem;
+  }
+
+  #more-about {
+    margin-top: 50px;
+  }
+
+  #more-about p {
+    text-align: justify;
+    padding: 5px;
+    margin: 0px 40px 0px 40px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .bio {
+    width: 18rem
+  }
+
+
+}
